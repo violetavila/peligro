@@ -36,24 +36,59 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<style>
+		video {
+			width: 100%    !important;
+  			height: auto   !important;
+  			margin: auto;
+		}
+		
+		div {
+			text-align: center;
+			color: white;
+			border: 3px solid gray;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 20px;
+			background-color: black;
+		}
+		
+		#foot_p {
+			color:purple;
+			text-align:right;
+			margin-right: 20px;			
+		}
+		
+		body {
+			background-color:#BDBDBD; 
+		}
+		
+	</style>
+
     </head>
     <body>
 
         <!-- Add your site or application content here -->
-	<video controls>
-		<source src=http://techslides.com/demos/sample-videos/small.webm
-			type=video/webm>
-		<source src=http://techslides.com/demos/sample-videos/small.ogv
-			type=video/ogg>
-		<source src=http://techslides.com/demos/sample-videos/small.mp4
-			type=video/mp4>
-		<source src=http://techslides.com/demos/sample-videos/small.3gp
-			type=video/3gp>
-	</video>
+	<div>
+		<h2>Mi primera app en Cloud Control </h2>
+		<p>Video de muestra tomado de <a href="http://techslides.com/">Techslides</a></p> 
+	</div>	
 	
-	<h1>Mis primeras lìneas usando Eclipse :) </h1> 
-	
-		<script src="js/vendor/zepto.min.js"></script>
+	<div>
+		<video controls>
+			<source src= videos/small.webm 	type=video/webm>
+			<source src= videos/small.ogv	type=video/ogg>
+			<source src= videos/small.mp4	type=video/mp4>
+			<source src= videos/small.3gp	type=video/3gp>
+			"Your browser does not support the video tag."
+		</video>
+	</div>
+
+	<p id="foot_p">Violeta Avila</p>
+		
+		
+	<script src="js/vendor/zepto.min.js"></script>
         <script src="js/helper.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
